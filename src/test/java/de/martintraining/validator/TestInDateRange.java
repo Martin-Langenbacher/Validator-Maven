@@ -1,13 +1,20 @@
 package de.martintraining.validator;
 
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;
 import java.util.Set;
 
-import javax.xml.validation.Validator;
+import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
+// import javax.xml.validation.Validator;  ====>> Falscher IMPORT !!!!
+import javax.validation.ValidatorFactory;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 
 
